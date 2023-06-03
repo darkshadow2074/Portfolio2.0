@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/tabLogo.png" />
+    <script
+      src="https://kit.fontawesome.com/167bf7fe82.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home | Akash Kumar Singh</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img class="logo" src="./images/logo.png" alt="" />
+
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Developer</p>
+          <h1>
+            Hi, I'm <span class="auto-type">Akash Kumar Singh </span> <br />
+            I Build Things for the web.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images//user.png" alt="" />
+          </div>
+
+          <!-- About Section  -->
+          <div class="about-col-2">
+            <h1 class="subtitles">About Me</h1>
+            <p>
+              Hi, I am Akash Kumar Singh and I am very passionate about web
+              development. As a ReactJS Frontend Developer, I have a deep
+              understanding of modern web development techniques and tools. With
+              expertise in ReactJS and its ecosystem, I have developed and
+              delivered high-quality and scalable web applications that meet
+              business requirements.
+            </p>
+            <div class="tab-titles">
+              <p onclick="openTab('skills')" class="tab-links active-link">
+                Skills
+              </p>
+              <p onclick="openTab('experience')" class="tab-links">
+                Experience
+              </p>
+              <p onclick="openTab('education')" class="tab-links">Education</p>
+            </div>
+            <div id="skills" class="tab-contents active">
+              <ul>
+                <li>
+                  <span>Programming</span>
+                  <ul>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;C++</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Javascript</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Development</span>
+                  <ul>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;HTML</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;CSS</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Javascript</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;React JS</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;React-Redux</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Node JS</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Parcel</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Software's</span>
+                  <ul>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Git</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Postman</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;Webmethods.io</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="experience" class="tab-contents">
+              <ul>
+                <li>
+                  <span>Software Engineer at Software AG</span>
+                  <ul>
+                    <li>From May 2022 - (Current)</li>
+                    <li>
+                      Working with the Cloud stream team, helping to develop and
+                      test connectors for various back-ends.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Front-End Developer Intern at Growth Gear </span>
+                  <ul>
+                    <li>From January 2022 - March 2022</li>
+                    <li>
+                      Worked as a front-end developer intern and contributed to
+                      live client projects and was responsible for developing a
+                      product using React JS for a client project
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Front-End Developer Intern at FINMO </span>
+                  <ul>
+                    <li>From October 2021 - December 2021</li>
+                    <li>
+                      Worked with the front-end team to develop important
+                      components using React JS, JavaScript, and other
+                      technologies for the product. As part of the product
+                      release in Australia, revamped the UI of the product for
+                      Australian customers
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Front-End Developer Intern at PHURTI </span>
+                  <ul>
+                    <li>From September 2021 - October 2021</li>
+                    <li>
+                      &Was responsible for brainstorming, developing the UI
+                      part, and adding functionalities that eased UX. Integrated
+                      additional features into the existing product, resulting
+                      in a smoother user experience both during and after the
+                      changes. As a result, the product metrics improved and the
+                      company received excellent feedback from customers.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div id="education" class="tab-contents">
+              <ul>
+                <li>
+                  <span>Dayananda Sagar University</span>
+                  <ul>
+                    <li>Bachelor of Technology, CSE</li>
+                    <li>From August 2018 - June 2022</li>
+                    <li>CGPA - 7.80</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Bhavan's Kesari Devi Kanoria Vidya Mandir </span>
+                  <ul>
+                    <li>Senior Secondary</li>
+                    <li>From March 2016 - March 2018</li>
+                    <li>Percentage - 78%</li>
+                  </ul>
+                </li>
+                <li>
+                  <span>Bhavan's Kesari Devi Kanoria Vidya Mandir</span>
+                  <ul>
+                    <li>Secondary</li>
+                    <li>March 2015 - March 2016</li>
+                    <li>CGPA - 9.4</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hobbies  -->
+    <div id="Hobbies">
+      <div class="container">
+        <h1 class="sub-titles">My Hobbies</h1>
+        <div class="hobbies-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Coding</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              magnam vitae nam maxime quo veniam iste. Quia in eos nisi unde
+              voluptas neque ipsam alias enim, quae dicta quam sint.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-dumbbell"></i>
+            <h2>Gym</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              magnam vitae nam maxime quo veniam iste. Quia in eos nisi unde
+              voluptas neque ipsam alias enim, quae dicta quam sint.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-book"></i>
+            <h2>Reading</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              magnam vitae nam maxime quo veniam iste. Quia in eos nisi unde
+              voluptas neque ipsam alias enim, quae dicta quam sint.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My Projects -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-titles">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img
+              src="https://www.sapphiresolutions.net/images/amazon_like_app_development/images/amazon_like_app_banner.svg"
+              alt="E-commerce"
+            />
+            <div class="layer">
+              <h3>WEB BAZAAR</h3>
+              <p>
+                An E-Commerce platform for fashion and beauty items aims to
+                bring together buyers and sellers in a digital marketplace,
+                providing a user-friendly interface, a wide selection of
+                products, and convenient features to facilitate online shopping
+                for fashion and beauty enthusiasts.
+              </p>
+              <a href="https://web-bazaar.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="/images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Contact Management WebApp</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                vel ducimus aut incidunt cumque voluptate veritatis ab amet eos,
+                perferendis excepturi veniam animi voluptatum deleniti,
+                obcaecati, magnam minima fuga laborum?
+              </p>
+              <a
+                href="https://contact-management-web-app.vercel.app/contacts"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="./images/work-1.png" alt="Email-App" />
+            <div class="layer">
+              <h3>MyMail Box</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                vel ducimus aut incidunt cumque voluptate veritatis ab amet eos,
+                perferendis excepturi veniam animi voluptatum deleniti,
+                obcaecati, magnam minima fuga laborum?
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/darkshadow2074?tab=repositories"
+          target="_blank"
+          class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+    <!-- My Blogs -->
+    <div id="blogs">
+      <div class="container">
+        <h1 class="sub-titles">My Blogs</h1>
+        <div class="blog-list">
+          <div class="blog">
+            <img
+              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1677328140151/b2ac8740-3239-4158-912b-21c53a101012.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+              alt="Equality Operator"
+            />
+            <div class="layer">
+              <h3>
+                Dark Truth of Abstract Equality (==) & Strict Equality (===)
+              </h3>
+              <p>
+                This is a detailed blogs which covers various comparison
+                operators available. However, two of them, namely == and ===,
+                bear striking resemblance with a subtle distinction introduced
+                by JavaScript developers
+              </p>
+              <a
+                href="https://darkshadow.hashnode.dev/dark-truth-of-abstract-equality-strict-equality-hidden-facts-with-proof"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog">
+            <img
+              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676376302068/f554bd92-a2fa-4ab1-82d7-f24e9a3e2715.webp?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+              alt="Equality Operator in JS"
+            />
+            <div class="layer">
+              <h3>Mysterious Console.log() In Javascript</h3>
+              <p>
+                The console.log() is a method that outputs a message to the web
+                console. The message may be a single string (with optional
+                substitution values), or it may be any one or more JavaScript
+                objects. It is used to print any kind of variables defined
+                before in it or to just print any message that needs to be
+                displayed to the user.
+              </p>
+              <a
+                href="https://darkshadow.hashnode.dev/mysterious-consolelog-in-javascript"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="blog">
+            <img
+              src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676448827408/9c0e378e-7f62-4907-94c2-deaf6c52acbb.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+              alt="Temporal Dead Zone"
+            />
+            <div class="layer">
+              <h3>What is Temporal Dead Zone?</h3>
+              <p>
+                A temporal dead zone (TDZ) is the area of a block where a
+                variable is inaccessible until the moment the computer
+                completely initializes it with a value. But wait we are not
+                directly going to jump into the depth of the temporal dead zone.
+              </p>
+              <a
+                href="https://darkshadow.hashnode.dev/what-is-temporal-dead-zone"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://darkshadow.hashnode.dev/" target="_blank" class="btn"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- CONTACT  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left-col">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>akashpre196@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>9113610178</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-hashnode"></i></a>
+            </div>
+            <a href="./images/My-CV.pdf" download class="btn btn-cv"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right-col">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+
+    <div class="copyright">
+      <p>Copyright © Akash. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
