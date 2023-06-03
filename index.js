@@ -38,3 +38,10 @@ var typed = new Typed("span", {
   backSpeed: 100,
   loop: true,
 });
+
+// Preloader code
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.querySelector("body").classList.add("loaded");
+  }, 10);
+});
